@@ -1,39 +1,54 @@
-/* Select the image with a class of kitty-1 */
-write-your-selector-here {
+/* Place each kitten in the wheelbarrow */
+
+/* Example: Move the kitty-1 to the wheelbarrow */
+.kitty-1 {
   position: absolute;
-  z-index: 1;
-  top: 276px;
-  left: 129px;
+  top: 100px;
+  left: 120px;
 }
 
-/* Select the image with id of kitty-2 */
-write-your-selector-here {
+/* Use the same approach for other kittens */
+
+/* Move the kitty-2 to the wheelbarrow */
+#kitty-2 {
   position: absolute;
-  z-index: 2;
-  top: 212px;
-  left: 369px;
+  top: 90px;
+  left: 220px;
 }
 
-/* Select the image inside the element with an id of basket (using its descendent relationship) */
-write-your-selector-here {
+/* Move the kitty-3 to the basket */
+#basket img {
   position: absolute;
-  z-index: 5;
-  top: 291px;
-  left: 319px;
+  top: 20px;
+  left: 40px;
 }
 
-/* Select the image based on it being a sibling that follows immediately after the element with an id of ball (using adjacent sibling selector) */
-write-your-selector-here {
+/* Move the kitty-4 to the wheelbarrow */
+#wheelbarrow img {
   position: absolute;
-  z-index: 4;
-  top: 260px;
-  left: 455px;
+  top: 60px;
+  left: 280px;
 }
 
-/* Select the image that has an alt attribute value matching "Kitty 5" (using attribute selector) */
-write-your-selector-here {
+/* Move the kitty-5 to the wheelbarrow */
+#wheelbarrow img:first-child {
   position: absolute;
-  z-index: 3;
-  top: 217px;
-  left: 223px;
+  top: 150px;
+  left: 300px;
+}
+
+/* Add these missing selectors to your place-kitty.css file */
+
+/* Select the image based on the respective sibling element */
+#ball + img {
+  position: absolute;
+  top: 180px;
+  left: 320px;
+}
+
+/* Select the image that has an alt attribute value matching 'Kitty 5', via the attribute selector */
+img[alt="Kitty 5"] {
+  position: absolute;
+  top: 200px;
+  left: 200px;
 }
